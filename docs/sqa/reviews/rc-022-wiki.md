@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-19 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go with two open items (autonomous, not independent) | [3a2b2c3] |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Records the check on the published wiki (criterion 14 and MIL-005 criterion 7); verdict stays Go | pending |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Records the check on the published wiki (criterion 14 and MIL-005 criterion 7); verdict stays Go | [0d2d01a] |
 
 ---
 
@@ -83,3 +83,4 @@ Go: no criterion fails. One item stays open and is named below: the confirmation
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
 [3a2b2c3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/3a2b2c318bd53aa3f234539380420be4f17c3f78
+[0d2d01a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/0d2d01a03dad770e567886efc953165b4da6896a
