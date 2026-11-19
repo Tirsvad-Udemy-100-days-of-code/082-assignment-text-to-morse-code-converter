@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-19 | Deprecated | Jens Tirsvad Nielsen | S01 | Records the check on the published wiki (criterion 14 and MIL-005 criterion 7); verdict stays Go | [0d2d01a] |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Records S01's confirmation of the Danish and Bahasa Malaysia texts (QC-LANG-001 criterion 9); no open item remains; verdict stays Go | pending |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Records S01's confirmation of the Danish and Bahasa Malaysia texts (QC-LANG-001 criterion 9); no open item remains; verdict stays Go | [6115bd9] |
 
 ---
 
@@ -84,3 +84,4 @@ Go: no criterion fails and no item is open.
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
 [3a2b2c3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/3a2b2c318bd53aa3f234539380420be4f17c3f78
 [0d2d01a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/0d2d01a03dad770e567886efc953165b4da6896a
+[6115bd9]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/6115bd9d1fd379b0efc2d5f0d96cc3be36da4c14
