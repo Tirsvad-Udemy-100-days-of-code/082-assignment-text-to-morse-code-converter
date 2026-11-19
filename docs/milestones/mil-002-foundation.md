@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-19 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version<br>Reviewed in RC-005: Go | [ba98d67] |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Go/No-Go criterion 8 allows `.gitkeep` placeholders in `src/` and `tests/`, because an editable install needs the `src` folder<br>Reviewed in RC-019: Go | pending |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Go/No-Go criterion 8 allows `.gitkeep` placeholders in `src/` and `tests/`, because an editable install needs the `src` folder<br>Reviewed in RC-019: Go | [cfaee4b] |
 
 ---
 
@@ -77,3 +77,4 @@ A repository with `pyproject.toml`, a Python `.gitignore`, `.editorconfig`, `.en
 [BC-001]: ../business-case.md
 [MIL-003]: ./mil-003-converter.md
 [ba98d67]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/ba98d6725280ec49e8e215622959ea535d58843c
+[cfaee4b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/cfaee4bc9e556572f5c5787229e6ea5932bdb780

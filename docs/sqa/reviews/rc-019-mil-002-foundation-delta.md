@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go (autonomous, not independent) | pending |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go (autonomous, not independent) | [cfaee4b] |
 
 ---
 
@@ -43,3 +43,4 @@ Go — the changed criterion is checkable and keeps its intent; the document is 
 [MIL-002]: ../../milestones/mil-002-foundation.md
 [QC-MIL-001]: ../../../framework/qc/artifacts/qc-milestones-gateways.md
 [RC-005]: ./rc-005-mil-002-foundation.md
+[cfaee4b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/cfaee4bc9e556572f5c5787229e6ea5932bdb780
