@@ -11,7 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version<br>Reviewed in RC-005: Go | [ba98d67] |
+| 2026-11-19 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version<br>Reviewed in RC-005: Go | [ba98d67] |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Go/No-Go criterion 8 allows `.gitkeep` placeholders in `src/` and `tests/`, because an editable install needs the `src` folder<br>Reviewed in RC-019: Go | pending |
 
 ---
 
@@ -34,7 +35,7 @@ A repository with `pyproject.toml`, a Python `.gitignore`, `.editorconfig`, `.en
 | 5 | `bash framework/scripts/check-editorconfig.sh` | Exit code 0 | Any finding |
 | 6 | The repository has a description and at least five topics on the git host | Both set | Either missing |
 | 7 | The README skeleton documents creating and using `.venv` and `python -m pip install --upgrade pip` for Linux and Windows | Both present | Either missing |
-| 8 | No file under `src/` or `tests/` exists | None | Any file |
+| 8 | No Python file exists under `src/` or `tests/`; each folder holds only a `.gitkeep` placeholder | No `.py` file | Any `.py` file |
 
 ## Dependencies
 
