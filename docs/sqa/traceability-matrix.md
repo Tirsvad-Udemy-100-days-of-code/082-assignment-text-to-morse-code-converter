@@ -28,7 +28,7 @@ Tracks backward and forward links between artifact instances so that the Busines
 | [MIL-002] | MIL | en | it | [PP-001], [BC-001] | [MIL-003] | [RC-019], [RC-005] |
 | [MIL-003] | MIL | en | it | [MIL-001], [MIL-002] | [MIL-004] | [RC-006] |
 | [MIL-004] | MIL | en | it | [MIL-003] | [MIL-005], [PY-002] | [RC-021], [RC-007] |
-| [MIL-005] | MIL | en | it | [MIL-004] | - | [RC-008] |
+| [MIL-005] | MIL | en | it | [MIL-004] | [WIKI-001] | [RC-008] |
 | [US-001] | US | en | it | [BC-001] | [UC-001] | [RC-009] |
 | [UCD-001] | UCD | en | it | [BC-001], [SA-001], [US-001] | [UC-001] | [RC-010] |
 | [UC-001] | UC | en | it | [UCD-001], [US-001] | [DM-001], [SSD-001], [ADR-0001] | [RC-011] |
@@ -41,6 +41,7 @@ Tracks backward and forward links between artifact instances so that the Busines
 | [ADR-0001] | ADR | - | - | [UC-001] | [OC-001], [SD-001], [PY-001] | [RC-018] |
 | [PY-001] | PY | - | - | [DCD-001], [ADR-0001] | - | [RC-020] |
 | [PY-002] | PY | - | - | [MIL-004] | - | [RC-021] |
+| [WIKI-001] | WIKI | en, da, ms | it | [MIL-005], [PY-002] | - | [RC-022] |
 
 ## Concern Coverage
 
@@ -48,7 +49,7 @@ Tracks backward and forward links between artifact instances so that the Busines
 | --- | --- | --- | --- | --- |
 | CN-001 | [UC-001], [OC-001], [SD-001], [DCD-001] | [ADR-0001] | - | Covered by the design; verified at MIL-003 by [RC-020] |
 | CN-002 | [PP-001], [MIL-001] | - | - | Covered by the plan and the review records |
-| CN-003 | [MIL-004], [MIL-005] | - | - | Covered by plan; verified at the gateway |
+| CN-003 | [MIL-004], [WIKI-001] | - | - | Covered by plan; verified at the gateway |
 | CN-004 | [DCD-001], [DICT-001] | - | - | Covered by the design; verified at MIL-003 by [RC-020] |
 | CN-005 | [MIL-002], [MIL-005] | - | - | Covered by plan; verified at the gateway |
 | CN-006 | [MIL-002] | - | - | Covered by plan; verified at the gateway |
@@ -108,3 +109,5 @@ Tracks backward and forward links between artifact instances so that the Busines
 [RC-020]: ./reviews/rc-020-python-source-code.md
 [PY-002]: ../../scripts/make_screenshots.py
 [RC-021]: ./reviews/rc-021-scripts-and-notebook-test.md
+[WIKI-001]: ../wiki/Home.md
+[RC-022]: ./reviews/rc-022-wiki.md
