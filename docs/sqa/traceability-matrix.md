@@ -25,7 +25,7 @@ Tracks backward and forward links between artifact instances so that the Busines
 | [SA-001] | SA | en | it | [BC-001] | [PP-001], [DCD-001] | [RC-002] |
 | [PP-001] | PP | en | it | [BC-001], [SA-001] | [MIL-001], [MIL-002], [MIL-003], [MIL-004], [MIL-005] | [RC-003] |
 | [MIL-001] | MIL | en | it | [PP-001], [BC-001] | [MIL-003] | [RC-004] |
-| [MIL-002] | MIL | en | it | [PP-001], [BC-001] | [MIL-003] | [RC-005] |
+| [MIL-002] | MIL | en | it | [PP-001], [BC-001] | [MIL-003] | [RC-019], [RC-005] |
 | [MIL-003] | MIL | en | it | [MIL-001], [MIL-002] | [MIL-004] | [RC-006] |
 | [MIL-004] | MIL | en | it | [MIL-003] | [MIL-005] | [RC-007] |
 | [MIL-005] | MIL | en | it | [MIL-004] | - | [RC-008] |
@@ -101,3 +101,4 @@ Tracks backward and forward links between artifact instances so that the Busines
 [UCD-001]: ../use-case-diagram.md
 [US-001]: ../user-stories.md
 [ba98d67]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/ba98d6725280ec49e8e215622959ea535d58843c
+[RC-019]: ./reviews/rc-019-mil-002-foundation-delta.md
