@@ -131,6 +131,8 @@ Before pushing, scan the files with opengrep (default path `~/.opengrep/cli/late
 bash scripts/scan.sh
 ```
 
+The pull request check also runs the rules of `github.com/opengrep/opengrep-rules`; to run them locally, clone that repository and set `OPENGREP_RULES` to the folder before the scan.
+
 Build the source documentation with Doxygen (the output goes to `docs/doxygen/`, which git ignores):
 
 ```bash

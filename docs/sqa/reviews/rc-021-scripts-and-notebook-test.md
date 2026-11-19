@@ -9,7 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go (autonomous, not independent) | [8955974] |
+| 2026-11-19 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go (autonomous, not independent) | [8955974] |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Criterion 3 records the explained `# nosemgrep` suppression that the pull request check made necessary; verdict stays Go | pending |
 
 ---
 
@@ -28,7 +29,7 @@
 | --- | --- | --- | --- |
 | 1 | Pass | `snake_case` functions and modules, `UPPER_SNAKE` constants, `PascalCase` for the dataclass `Step`. |
 | 2 | Pass | Names state purpose (`run_in_container`, `render`, `load_font`); no unexplained abbreviation. |
-| 3 | Pass | `ruff format --check` and `ruff check` pass on `src tests scripts`; no suppression comment. |
+| 3 | Pass | `ruff format --check` and `ruff check` pass on `src tests scripts`. One suppression exists, `# nosemgrep` on the `subprocess.run` call of `run_in_container`: the pull request check flagged a non-static command list, but every command is a constant of `STEPS` in the same file and no outside input reaches the call; the comment above the call says so. |
 | 4 | Pass | All signatures are annotated; `mypy --strict` passes on 22 files. One override in `pyproject.toml` allows an untyped call in `test_notebook.py` because `nbformat.read` has no type hints; it is commented. |
 | 5 | Pass | No bare `except`; `load_font` catches `OSError` only to try the next font and ends with `SystemExit` and a message when none is found. |
 | 6 | Pass | No default argument and no shadowed builtin. |

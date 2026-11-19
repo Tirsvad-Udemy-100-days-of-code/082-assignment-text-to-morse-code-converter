@@ -106,7 +106,11 @@ def run_in_container(commands: tuple[str, ...]) -> str:
         "-c",
         f"({chr(10).join(commands)}) 2>&1",
     ]
-    done = subprocess.run(docker, capture_output=True, text=True, check=False)
+    # The commands are the constants of STEPS in this file; no outside input reaches
+    # the call, so the audit rule for a non-static string does not apply.
+    done = subprocess.run(  # nosemgrep
+        docker, capture_output=True, text=True, check=False
+    )
     return done.stdout.replace("\r\n", "\n").rstrip("\n")
 
 
