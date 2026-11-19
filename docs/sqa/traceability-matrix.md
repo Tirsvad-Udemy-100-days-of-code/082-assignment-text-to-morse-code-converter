@@ -27,7 +27,7 @@ Tracks backward and forward links between artifact instances so that the Busines
 | [MIL-001] | MIL | en | it | [PP-001], [BC-001] | [MIL-003] | [RC-004] |
 | [MIL-002] | MIL | en | it | [PP-001], [BC-001] | [MIL-003] | [RC-019], [RC-005] |
 | [MIL-003] | MIL | en | it | [MIL-001], [MIL-002] | [MIL-004] | [RC-006] |
-| [MIL-004] | MIL | en | it | [MIL-003] | [MIL-005] | [RC-007] |
+| [MIL-004] | MIL | en | it | [MIL-003] | [MIL-005], [PY-002] | [RC-021], [RC-007] |
 | [MIL-005] | MIL | en | it | [MIL-004] | - | [RC-008] |
 | [US-001] | US | en | it | [BC-001] | [UC-001] | [RC-009] |
 | [UCD-001] | UCD | en | it | [BC-001], [SA-001], [US-001] | [UC-001] | [RC-010] |
@@ -40,6 +40,7 @@ Tracks backward and forward links between artifact instances so that the Busines
 | [DCD-001] | DCD | - | - | [SD-001], [DM-001] | [PY-001] | [RC-017] |
 | [ADR-0001] | ADR | - | - | [UC-001] | [OC-001], [SD-001], [PY-001] | [RC-018] |
 | [PY-001] | PY | - | - | [DCD-001], [ADR-0001] | - | [RC-020] |
+| [PY-002] | PY | - | - | [MIL-004] | - | [RC-021] |
 
 ## Concern Coverage
 
@@ -105,3 +106,5 @@ Tracks backward and forward links between artifact instances so that the Busines
 [RC-019]: ./reviews/rc-019-mil-002-foundation-delta.md
 [PY-001]: ../../src/morse_converter/__init__.py
 [RC-020]: ./reviews/rc-020-python-source-code.md
+[PY-002]: ../../scripts/make_screenshots.py
+[RC-021]: ./reviews/rc-021-scripts-and-notebook-test.md
