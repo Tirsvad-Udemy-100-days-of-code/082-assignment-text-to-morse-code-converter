@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-19 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version<br>Accepted by S01; the type has no checklist | [ba98d67] |
 
 ---
 
@@ -100,3 +100,4 @@ Tracks backward and forward links between artifact instances so that the Busines
 [UC-001]: ../use-cases/uc-001/uc.md
 [UCD-001]: ../use-case-diagram.md
 [US-001]: ../user-stories.md
+[ba98d67]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/ba98d6725280ec49e8e215622959ea535d58843c

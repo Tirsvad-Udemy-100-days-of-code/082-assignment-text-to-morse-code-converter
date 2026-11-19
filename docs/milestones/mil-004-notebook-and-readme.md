@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version<br>Reviewed in RC-007: Go | pending |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version<br>Reviewed in RC-007: Go | [ba98d67] |
 
 ---
 
@@ -76,3 +76,4 @@ The lecture steps are the ones of the Day 82 lecture list, which has two items: 
 [BC-001]: ../business-case.md
 [MIL-003]: ./mil-003-converter.md
 [UC-001]: ../use-cases/uc-001/uc.md
+[ba98d67]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/ba98d6725280ec49e8e215622959ea535d58843c

@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version<br>Reviewed in RC-006: Go | pending |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version<br>Reviewed in RC-006: Go | [ba98d67] |
 
 ---
 
@@ -87,3 +87,4 @@ The package `src/morse_converter` with the layers `domain`, `application` and `p
 [SD-001]: ../use-cases/uc-001/sd.md
 [UC-001]: ../use-cases/uc-001/uc.md
 [US-001]: ../user-stories.md
+[ba98d67]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/ba98d6725280ec49e8e215622959ea535d58843c
