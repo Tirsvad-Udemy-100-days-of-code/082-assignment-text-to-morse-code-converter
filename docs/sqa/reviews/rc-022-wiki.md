@@ -9,7 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go with two open items (autonomous, not independent) | [3a2b2c3] |
+| 2026-11-19 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go with two open items (autonomous, not independent) | [3a2b2c3] |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Records the check on the published wiki (criterion 14 and MIL-005 criterion 7); verdict stays Go | [0d2d01a] |
 
 ---
 
@@ -39,7 +40,7 @@
 | 11 | Pass | Every page starts with `**English** · [Dansk](...) · [Bahasa Malaysia](...)` with the current language in bold. |
 | 12 | Pass | Danish pages end in `-da.md`, Bahasa Malaysia pages in `-ms.md`, English pages have no suffix. |
 | 13 | Pass | Commands, code names, file names and IDs (`.venv`, `python -m morse_converter`, `UnsupportedCharacterError`, `ADR-0001`) are English in all three languages. |
-| 14 | Open | To be checked on the published wiki after the merge (task 7, issue 68); the result is added to this record in a follow-up change. |
+| 14 | Pass | After the merge the wiki on the host lists 22 pages (21 pages and the sidebar); 11 pages in the three languages answer with HTTP 200, the sidebar links of `Home` and the language links are present, and the four screenshots answer with HTTP 200. |
 | 15 | N-A | No change to the layout rules. |
 | 16 | Pass | `docs/wiki/` holds the 22 files directly and has no subfolder. |
 
@@ -63,17 +64,17 @@
 | 4 | No image or text is taken from the lecture | Pass | The lecture is summarised in one sentence of the own words of the author; the images are the program's output. |
 | 6 | The framework checks | Pass | `check-languages.sh`, `check-qc-tags.sh`, `check-readme.sh` and `check-editorconfig.sh` exit 0. |
 | 8 | opengrep | Pass | `bash scripts/scan.sh` with the CI rules: 783 rules, 0 findings. |
-| 7 | The published wiki | Open | Checked after the merge (QC-WIKI-001 criterion 14). |
+| 7 | The published wiki | Pass | See QC-WIKI-001 criterion 14. |
 
 ## Overall Verdict
 
-Go: no criterion fails. Two items are open and are named below: the check on the published wiki and the confirmation of the Danish and Bahasa Malaysia texts by a reader of those languages.
+Go: no criterion fails. One item stays open and is named below: the confirmation of the Danish and Bahasa Malaysia texts by a reader of those languages.
 
 ## Action Items
 
 | Action | Owner | Due |
 | --- | --- | --- |
-| Check the sidebar, every page and every link on the published wiki and record the result here | S01 | 2026-11-19, after the merge |
+| Check the sidebar, every page and every link on the published wiki and record the result here | S01 | Done 2026-11-19 (criterion 14) |
 | Have a reader of Danish and a reader of Bahasa Malaysia confirm the translations | S01 | 2026-11-22 |
 
 ---
@@ -82,3 +83,4 @@ Go: no criterion fails. Two items are open and are named below: the check on the
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
 [3a2b2c3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/3a2b2c318bd53aa3f234539380420be4f17c3f78
+[0d2d01a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/0d2d01a03dad770e567886efc953165b4da6896a
