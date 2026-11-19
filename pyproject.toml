@@ -18,6 +18,9 @@ Repository = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assig
 Documentation = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/wiki"
 "Issue tracker" = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/issues"
 
+[project.scripts]
+morse-converter = "morse_converter.presentation.commands.convert_text_command:main"
+
 [project.optional-dependencies]
 dev = [
     "pytest>=8",
@@ -47,5 +50,5 @@ select = ["E", "F", "I", "UP", "B"]
 
 [tool.mypy]
 strict = true
-files = ["src", "tests", "scripts"]
+files = ["src", "tests"]
 mypy_path = "src"
