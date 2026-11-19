@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go (autonomous, not independent) | pending |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go (autonomous, not independent) | [8955974] |
 
 ---
 
@@ -72,3 +72,4 @@ Go: no criterion fails; criterion 10 of the checklist is not applicable.
 [MIL-004]: ../../milestones/mil-004-notebook-and-readme.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [DCD-001]: ../../dcd.md
+[8955974]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/89559746d1d33c8f30d9a1e2fc3b7737ccfa5abd
