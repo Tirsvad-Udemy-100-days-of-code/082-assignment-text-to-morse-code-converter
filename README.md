@@ -8,6 +8,7 @@ Day 82 of Udemy's *100 Days of Code: The Complete Python Pro Bootcamp*: a text-b
 - [Requirements](#-requirements)
 - [Setup](#-setup)
 - [Run](#-run)
+- [The four steps](#-the-four-steps)
 - [Tests](#-tests)
 - [License](#-license)
 - [Links](#-links)
@@ -29,7 +30,7 @@ The assignment is one sentence: a text-based Python program that converts string
 | `.editorconfig` | The editor settings of the framework baseline |
 | `.env.example` | Placeholders for the git host tokens that the framework scripts read; the program itself reads no setting from `.env` |
 
-The project is built in gateways (see the [Project Plan][PP-001]); the code of the converter arrives in gateway MIL-003, and the notebook, the screenshots and the full wiki in the gateways after it.
+The project is built in gateways (see the [Project Plan][PP-001]), one branch and one pull request for each, so the history shows the steps.
 
 ## 📋 Requirements
 
@@ -65,16 +66,63 @@ Leave out `[dev]` if you only want to run the converter. `deactivate` leaves the
 
 ## ▶️ Run
 
-The program is added in gateway MIL-003. It will convert text given as an argument or typed at a prompt:
+Give the text as arguments or type it at the prompt:
 
 ```bash
-python -m morse_converter "SOS"
+python -m morse_converter Hello World
+python -m morse_converter
+```
+
+The first command prints `.... . .-.. .-.. --- / .-- --- .-. .-.. -..`. Words are separated by ` / ` and the letters of a word by one space. A character that has no Morse code (for example `~`) is named on the error stream, nothing is converted and the exit code is 1.
+
+From Python, use the names of the assignment:
+
+```python
+from morse_converter import MORSE_CODE_DICT, text_to_morse
+
+text_to_morse("SOS")  # '... --- ...'
+```
+
+The notebook `notebooks/Text_to_Morse_Code_Converter.ipynb` runs the same steps; start it with `python -m jupyter lab`.
+
+## 🪜 The four steps
+
+The lecture (Day 82, "The Road to Becoming a Professional Developer") is summarised in words only: build a project without a guide, break it into small steps, look things up when you are stuck, and keep going. The repository follows four steps; the screenshots show the program's own output, made by `scripts/make_screenshots.py` in a Docker container (Linux, Python 3.13). The wiki explains what each step teaches, in English, Danish and Bahasa Malaysia.
+
+1. **The Road to Becoming a Professional Developer**: a use case and its design first, then a project with its own `.venv`, tests and layers.
+
+   ![Step 1: the Python version and the files of the package](docs/images/step-1-the-road.png)
+
+2. **The Morse table**: a dictionary of 54 characters in `constants.py`.
+
+   ![Step 2: the Morse table](docs/images/step-2-morse-table.png)
+
+3. **Convert text to Morse code**: `text_to_morse` splits the text into words and joins the codes.
+
+   ![Step 3: converting text](docs/images/step-3-convert-text.png)
+
+4. **Run it from the command line**: `python -m morse_converter`, with the exit code 0 or 1.
+
+   ![Step 4: the command line](docs/images/step-4-command-line.png)
+
+To make the screenshots again (Docker must be running):
+
+```bash
+python scripts/make_screenshots.py
 ```
 
 ## 🧪 Tests
 
 ```bash
 python -m pytest
+```
+
+The tests include the notebook, which runs headlessly, and the command line, which runs as a subprocess. For the static checks:
+
+```bash
+python -m ruff check src tests scripts
+python -m ruff format --check src tests scripts
+python -m mypy
 ```
 
 Before pushing, scan the files with opengrep (default path `~/.opengrep/cli/latest/opengrep.exe`; `git add` new files first, because opengrep scans tracked files):
