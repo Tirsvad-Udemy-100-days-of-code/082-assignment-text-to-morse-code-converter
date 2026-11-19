@@ -37,17 +37,18 @@ Tracks backward and forward links between artifact instances so that the Busines
 | [SSD-001] | SSD | en | it | [UC-001], [DM-001] | [OC-001] | [RC-014] |
 | [OC-001] | OC | - | - | [SSD-001] | [SD-001] | [RC-015] |
 | [SD-001] | SD | - | - | [OC-001] | [DCD-001] | [RC-016] |
-| [DCD-001] | DCD | - | - | [SD-001], [DM-001] | source code (MIL-003) | [RC-017] |
-| [ADR-0001] | ADR | - | - | [UC-001] | [OC-001], [SD-001] | [RC-018] |
+| [DCD-001] | DCD | - | - | [SD-001], [DM-001] | [PY-001] | [RC-017] |
+| [ADR-0001] | ADR | - | - | [UC-001] | [OC-001], [SD-001], [PY-001] | [RC-018] |
+| [PY-001] | PY | - | - | [DCD-001], [ADR-0001] | - | [RC-020] |
 
 ## Concern Coverage
 
 | Concern (CN-ID) | Views that answer it | Decisions (ADR) | Quality check (TP) | Status |
 | --- | --- | --- | --- | --- |
-| CN-001 | [UC-001], [OC-001], [SD-001], [DCD-001] | [ADR-0001] | - | Covered by the design; verified at MIL-003 |
+| CN-001 | [UC-001], [OC-001], [SD-001], [DCD-001] | [ADR-0001] | - | Covered by the design; verified at MIL-003 by [RC-020] |
 | CN-002 | [PP-001], [MIL-001] | - | - | Covered by the plan and the review records |
 | CN-003 | [MIL-004], [MIL-005] | - | - | Covered by plan; verified at the gateway |
-| CN-004 | [DCD-001], [DICT-001] | - | - | Covered by the design; verified at MIL-003 |
+| CN-004 | [DCD-001], [DICT-001] | - | - | Covered by the design; verified at MIL-003 by [RC-020] |
 | CN-005 | [MIL-002], [MIL-005] | - | - | Covered by plan; verified at the gateway |
 | CN-006 | [MIL-002] | - | - | Covered by plan; verified at the gateway |
 
@@ -102,3 +103,5 @@ Tracks backward and forward links between artifact instances so that the Busines
 [US-001]: ../user-stories.md
 [ba98d67]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/ba98d6725280ec49e8e215622959ea535d58843c
 [RC-019]: ./reviews/rc-019-mil-002-foundation-delta.md
+[PY-001]: ../../src/morse_converter/__init__.py
+[RC-020]: ./reviews/rc-020-python-source-code.md
