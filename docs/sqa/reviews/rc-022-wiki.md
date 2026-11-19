@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-19 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial review record; verdict Go with two open items (autonomous, not independent) | [3a2b2c3] |
-| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Records the check on the published wiki (criterion 14 and MIL-005 criterion 7); verdict stays Go | [0d2d01a] |
+| 2026-11-19 | Deprecated | Jens Tirsvad Nielsen | S01 | Records the check on the published wiki (criterion 14 and MIL-005 criterion 7); verdict stays Go | [0d2d01a] |
+| 2026-11-19 | Accepted | Jens Tirsvad Nielsen | S01 | Records S01's confirmation of the Danish and Bahasa Malaysia texts (QC-LANG-001 criterion 9); no open item remains; verdict stays Go | [6115bd9] |
 
 ---
 
@@ -20,7 +20,7 @@
 - Checklist used: [QC-WIKI-001] and [QC-LANG-001] (the language checklist is applied where a wiki page can meet it)
 - Scope: full review
 - Language and domain: en, da and ms / it
-- Language reviewer: none for `da` and `ms` (see Action Items)
+- Language reviewer: S01 for `da` and `ms` (confirmed in chat on 2026-11-19)
 - Mode: autonomous, not independent (the author and the reviewer are both S01)
 
 ## Checklist Results
@@ -50,7 +50,7 @@
 | --- | --- | --- | --- |
 | 3 | Pass | The pages are written in the language of their file; code, commands and file names stay English, as the wiki checklist allows. |
 | 6 | Pass | The page names, file names and IDs are English; the page headings are in the language of the page, as the wiki is read by readers of that language (a wiki page has no Metadata table). |
-| 9 | Open | The Danish and Bahasa Malaysia texts were written by the author, and no second reviewer who reads those languages has confirmed the terms; this is an action item for S01. |
+| 9 | Pass | S01 confirmed the Danish and Bahasa Malaysia texts in chat on 2026-11-19; the author wrote them, so the confirmation is by the Product Owner, not by a second reviewer. |
 | 10 | Pass | Abbreviations are spelled out or are established names (Docker, Doxygen, pytest, ADR is linked to its document). |
 | 1, 2, 4, 5, 7, 8 | N-A | A wiki page is documentation for readers, not an artifact with an ID and a Metadata table (`framework/process/wiki.md`), so the Metadata, register, dictionary and Version History criteria do not apply. |
 
@@ -68,14 +68,14 @@
 
 ## Overall Verdict
 
-Go: no criterion fails. One item stays open and is named below: the confirmation of the Danish and Bahasa Malaysia texts by a reader of those languages.
+Go: no criterion fails and no item is open.
 
 ## Action Items
 
 | Action | Owner | Due |
 | --- | --- | --- |
 | Check the sidebar, every page and every link on the published wiki and record the result here | S01 | Done 2026-11-19 (criterion 14) |
-| Have a reader of Danish and a reader of Bahasa Malaysia confirm the translations | S01 | 2026-11-22 |
+| Have a reader of Danish and a reader of Bahasa Malaysia confirm the translations | S01 | Done 2026-11-19 (confirmed in chat) |
 
 ---
 
@@ -84,3 +84,4 @@ Go: no criterion fails. One item stays open and is named below: the confirmation
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
 [3a2b2c3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/3a2b2c318bd53aa3f234539380420be4f17c3f78
 [0d2d01a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/0d2d01a03dad770e567886efc953165b4da6896a
+[6115bd9]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/082-assignment-text-to-morse-code-converter/commit/6115bd9d1fd379b0efc2d5f0d96cc3be36da4c14
